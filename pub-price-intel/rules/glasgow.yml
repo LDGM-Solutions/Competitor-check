@@ -1,0 +1,19 @@
+catalog:
+  id_column: sku
+  name_column: name
+  volume_column: volume_ml
+
+matching:
+  - venue: jdw
+    rules:
+      - field: product_name
+        contains: lager
+        match_sku: SKU-100
+      - field: product_name
+        contains: cider
+        match_sku: SKU-200
+  - venue: nicholsons
+    rules:
+      - field: product_name
+        contains: stout
+        match_sku: SKU-300

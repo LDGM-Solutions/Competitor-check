@@ -1,0 +1,4 @@
+pandas>=2.0
+pyyaml>=6.0
+playwright>=1.40
+prefect>=2.0
