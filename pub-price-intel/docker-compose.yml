@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  scraper:
+    build: .
+    env_file:
+      - .env.example
+    volumes:
+      - ./data:/app/data
+    command: ["scrape"]
+
+  matcher:
+    build: .
+    env_file:
+      - .env.example
+    volumes:
+      - ./data:/app/data
+    command: ["match"]

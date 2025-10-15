@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pub-price-intel"
+version = "0.1.0"
+description = "Scrape, parse, and match Glasgow pub price data"
+authors = [{ name = "LDGM Solutions", email = "ops@ldgm.solutions" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0",
+  "pyyaml>=6.0",
+  "playwright>=1.40",
+  "prefect>=2.0",
+]
+
+[project.scripts]
+pub-price-intel = "cli:main"
