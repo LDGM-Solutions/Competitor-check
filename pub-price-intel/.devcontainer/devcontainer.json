@@ -1,0 +1,14 @@
+{
+  "name": "pub-price-intel",
+  "dockerFile": "../Dockerfile",
+  "context": "..",
+  "runArgs": ["--env-file", "../.env.example"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}
